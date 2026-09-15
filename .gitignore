@@ -1,0 +1,28 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+build/
+dist/
+.venv/
+venv/
+
+# Tooling caches
+.mypy_cache/
+.pytest_cache/
+.ruff_cache/
+
+# Secrets — never commit these
+.env
+.env.*
+!.env.example
+
+# Runtime state and diagnostics.
+# The production database lives on the `state` branch, written by CI.
+# Anything produced by a local run stays local.
+*.db
+*.db-journal
+*.db-wal
+artifacts/
+storage_state.json
+discovery/
